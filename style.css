@@ -257,6 +257,15 @@ img { max-width: 100%; display: block; }
   font-weight: 300;
   animation: fadeUp 0.9s ease 0.2s backwards;
 }
+.role-prefix {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  margin-right: 0.4rem;
+  vertical-align: 0.1em;
+}
 .typed { color: var(--text); font-weight: 400; }
 .caret {
   color: var(--accent);
