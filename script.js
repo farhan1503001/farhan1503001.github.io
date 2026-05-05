@@ -6,11 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ===== Typing animation ===== */
   const roles = [
-    'CS PhD Researcher',
-    'Privacy-Preserving AI researcher',
-    'Generative AI Forensics enthusiast',
-    'interested in Federated Learning ',
-    'focused on Trustworthy ML',
+    'Privacy-Preserving AI',
+    'Generative AI Forensics',
+    'Federated Learning',
+    'Trustworthy ML',
+    'LLM & VLM Security',
+    'Multimodal Learning',
   ];
   const typedEl = document.getElementById('typed');
   let roleIdx = 0;
