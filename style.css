@@ -1091,7 +1091,8 @@ img { max-width: 100%; display: block; }
 /* News photo thumbnail */
 .news-media { margin-top: 0.9rem; }
 .news-photo {
-  width: 200px;
+  height: 230px;
+  width: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 8px;
@@ -1167,5 +1168,5 @@ img { max-width: 100%; display: block; }
   transform: rotate(90deg);
 }
 @media (max-width: 700px) {
-  .news-photo { width: 100%; max-width: 320px; }
+  .news-photo { height:auto,width: 100%; max-width: 280px; }
 }
