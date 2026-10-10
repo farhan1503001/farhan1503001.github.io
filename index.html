@@ -1,586 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohd. Farhan Israk Soumik — Graduate Researcher</title>
-  <meta name="description" content="Mohd. Farhan Israk Soumik — Computer Science Grad student at Southern Illinois University Carbondale. Research in privacy-preserving AI, generative AI forensics, and trustworthy machine learning." />
-  <meta name="author" content="Mohd. Farhan Israk Soumik" />
-  <meta name="theme-color" content="#0b0d12" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohd. Farhan Israk Soumik | Computer Science, SIU Carbondale</title>
+  <meta name="description" content="Mohd. Farhan Israk Soumik is a graduate researcher in Computer Science at Southern Illinois University Carbondale (SHIELD Lab), working on the security, privacy, and forensics of consumer generative AI. Publications at EMNLP, ACL, ICTAI, ICMLA, and AAAI workshops.">
+  <meta name="author" content="Mohd. Farhan Israk Soumik">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fbf9f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://farhan1503001.github.io/">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-  <!-- Open Graph (Facebook, LinkedIn, Slack) -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Mohd. Farhan Israk Soumik — CS Grad Researcher" />
-  <meta property="og:description" content="Researching privacy, security, and forensics of human interaction with generative AI at the SHIELD Lab, Southern Illinois University Carbondale." />
-  <meta property="og:image" content="https://farhan1503001.github.io/assets/og-image.png" />
-  <meta property="og:url" content="https://farhan1503001.github.io" />
-  <meta property="og:site_name" content="MFIS Portfolio" />
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Mohd. Farhan Israk Soumik">
+  <meta property="og:description" content="Graduate researcher at SIU Carbondale working on the security, privacy, and forensics of consumer generative AI.">
+  <meta property="og:url" content="https://farhan1503001.github.io/">
+  <meta property="og:image" content="https://farhan1503001.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="profile:first_name" content="Mohd. Farhan Israk">
+  <meta property="profile:last_name" content="Soumik">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mohd. Farhan Israk Soumik">
+  <meta name="twitter:description" content="Security, privacy, and forensics of consumer generative AI.">
+  <meta name="twitter:image" content="https://farhan1503001.github.io/assets/og-image.png">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mohd. Farhan Israk Soumik — CS Grad Researcher" />
-  <meta name="twitter:description" content="Researching privacy, security, and forensics of human interaction with generative AI." />
-  <meta name="twitter:image" content="https://farhan1503001.github.io/assets/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohd. Farhan Israk Soumik",
+    "alternateName": ["Farhan Israk Soumik", "MFI Soumik"],
+    "jobTitle": "Graduate Researcher in Computer Science",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Southern Illinois University Carbondale"
+    },
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Rajshahi University of Engineering & Technology"}
+    ],
+    "email": "mailto:mohdfarhanisrak.soumik@siu.edu",
+    "url": "https://farhan1503001.github.io/",
+    "image": "https://farhan1503001.github.io/assets/headshot.jpg",
+    "knowsAbout": ["Privacy-preserving machine learning", "Generative AI forensics", "Large language models", "Vision-language models", "Federated learning"],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=gKmSXl8AAAAJ",
+      "https://orcid.org/0000-0002-9658-2775",
+      "https://github.com/farhan1503001",
+      "https://www.linkedin.com/in/mohd-farhan-israk-soumik/"
+    ]
+  }
+  </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    // Apply saved theme before paint to avoid a flash of the wrong theme.
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Cursor follower -->
-  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="site-name" href="#top">MFI Soumik</a>
+      <nav aria-label="Sections">
+        <ul class="nav-list">
+          <li><a href="#news">News</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="assets/cv.pdf">CV</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme">
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </header>
 
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <a href="#home" class="nav-logo">MFIS<span>.</span></a>
-    <ul class="nav-links">
-      <li><a href="#news">News</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+  <main id="main" class="wrap">
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="hero-grid"></div>
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="hero-eyebrow"><span class="dot"></span> Available for collaboration</p>
-        <h1 class="hero-name">
-          Mohd. Farhan<br/>Israk <span class="serif-italic">Soumik</span>
-        </h1>
-        <p class="hero-role">
-          <span class="role-prefix">Focus &mdash;</span> <span class="typed" id="typed"></span><span class="caret">|</span>
+    <!-- ===================== PROFILE ===================== -->
+    <section class="profile" id="top" aria-labelledby="name">
+      <div class="profile-text">
+        <h1 id="name">Mohd. Farhan Israk Soumik</h1>
+        <p class="role">
+          Graduate Researcher, Computer Science<br>
+          <a href="https://siu.edu/">Southern Illinois University Carbondale</a>
         </p>
-        <p class="hero-tagline">
-          Researching the security, privacy, and forensic challenges of human interaction with large-scale generative AI systems at the SHIELD Lab, Southern Illinois University Carbondale.
-        </p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#contact">
-            <span>Get in touch</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a class="btn btn-ghost" href="assets/cv.pdf" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-            <span>Download CV</span>
-          </a>
-        </div>
-        <div class="hero-socials">
-          <a href="https://www.linkedin.com/in/mohd-farhan-israk-soumik/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
-          </a>
-          <a href="https://github.com/farhan1503001" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
-          </a>
-          <a href="https://scholar.google.com/citations?user=gKmSXl8AAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg>
-          </a>
-          <a href="https://orcid.org/0000-0002-9658-2775" target="_blank" rel="noopener" aria-label="ORCID">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947 0 .525-.422.947-.947.947-.525 0-.946-.422-.946-.947 0-.525.421-.947.946-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.713 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg>
-          </a>
-          <a href="mailto:farhanisrak1503001@gmail.com" aria-label="Email">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="portrait-frame">
-          <div class="portrait-glow"></div>
-          <img src="assets/headshot.jpg" alt="Mohd. Farhan Israk Soumik" class="portrait" />
-          <div class="portrait-tag">
-            <span class="tag-line">MSc '24–'27</span>
-            <span class="tag-line">SIU Carbondale</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="scroll-indicator" href="#about">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </a>
-  </section>
 
-  <!-- News -->
-  <section class="section section-news" id="news">
-    <div class="section-head">
-      <span class="section-num">00</span>
-      <h2 class="section-title">Recent <span class="serif-italic">news</span></h2>
-    </div>
-    <div class="news-list">
-      <article class="news-item">
-        <div class="news-date">
-          <span class="news-month">4th September</span>
-          <span class="news-year">2026</span>
-        </div>
-        <div class="news-body">
-          <span class="news-tag tag-paper">Paper</span>
-          <p>Paper <em>"𝗪𝗵𝗲𝗻 𝗤𝘂𝗮𝗻𝘁𝘂𝗺 𝗘𝗻𝘁𝗮𝗻𝗴𝗹𝗲𝗺𝗲𝗻𝘁 𝗠𝗲𝗲𝘁𝘀 𝗧𝗿𝗮𝗻𝘀𝗳𝗼𝗿𝗺𝗲𝗿 𝗔𝘁𝘁𝗲𝗻𝘁𝗶𝗼𝗻: 𝗔 𝗖𝗼𝗻𝘁𝗿𝗼𝗹𝗹𝗲𝗱 𝗦𝘁𝘂𝗱𝘆 𝗼𝗳 𝗤𝘂𝗮𝗻𝘁𝘂𝗺 𝗔𝘁𝘁𝗲𝗻𝘁𝗶𝗼𝗻 𝗛𝗲𝗮𝗱𝘀"</em> is accepted as full paper at <strong>𝟯𝟴𝘁𝗵 𝗜𝗻𝘁𝗲𝗿𝗻𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗖𝗼𝗻𝗳𝗲𝗿𝗲𝗻𝗰𝗲 𝗼𝗻 𝗧𝗼𝗼𝗹𝘀 𝘄𝗶𝘁𝗵 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 (𝗜𝗖𝗧𝗔𝗜 𝟮𝟬𝟮𝟲)</strong> First Paper in Quantum ML and AI!</p>
-        </div>
-      </article>
-      <article class="news-item">
-        <div class="news-date">
-          <span class="news-month">20th August</span>
-          <span class="news-year">2026</span>
-        </div>
-        <div class="news-body">
-          <span class="news-tag tag-paper">Paper</span>
-          <p>Paper <em>"Edits in the Wild: A Multilingual Benchmark for Localizing On-Device Generative Image Edits on Consumer Platforms"</em> is accepted for presentation <strong>EMNLP 2026 Main Conference</strong> at Budapest Hungary!</p>
-        </div>
-      </article>
-       <article class="news-item">
-        <div class="news-date">
-          <span class="news-month">7th July</span>
-          <span class="news-year">2026</span>
-        </div>
-        <div class="news-body">
-          <span class="news-tag tag-paper">Presentation</span>
-          <p>Paper <em>Presented my poster at 64th Annual Meetings of Association of Computational Linguistics<strong>ACL 2026</strong> in San Diego!</p>
-          <div class="news-media">
-              <img class="news-photo"
-                   src="assets/acl2026.jpg"
-                   alt="Presenting at ACL 2026 Industry Track, San Diego"
-                   data-caption="ACL 2026 Industry Track — San Diego, California"
-                   loading="lazy" />
-              <p class="news-caption">ACL 2026 Industry Track — San Diego</p>
-            </div>
-        </div>
-      </article>
-       <article class="news-item">
-        <div class="news-date">
-          <span class="news-month">May</span>
-          <span class="news-year">2026</span>
-        </div>
-        <div class="news-body">
-          <span class="news-tag tag-paper">Role</span>
-          <p>Role <em>Selected as conference volunteer at <strong>ACL 2026</strong> in San Diego!</p>
-        </div>
-      </article>
-      <article class="news-item">
-        <div class="news-date">
-          <span class="news-month">Apr</span>
-          <span class="news-year">2026</span>
-        </div>
-        <div class="news-body">
-          <span class="news-tag tag-paper">Paper</span>
-          <p>Paper <em>"No Innocence in Styling — Discovery of Privacy Protection Capabilities and Security Risks in Consumer Generative AI Writing Assistants"</em> accepted for presentation at <strong>ACL 2026 Industry Track</strong> in San Diego.</p>
-        </div>
-      </article>
-      <article class="news-item">
-        <div class="news-date">
-          <span class="news-month">Nov</span>
-          <span class="news-year">2025</span>
-        </div>
-        <div class="news-body">
-          <span class="news-tag tag-talk">Talk</span>
-          <p>Presented our work on <em>privacy-preserving multimodal stress detection</em> at <strong>ICMLA 2025</strong> in Boca Raton, Florida.</p>
-        </div>
-      </article>
-      <article class="news-item">
-        <div class="news-date">
-          <span class="news-month">Jun</span>
-          <span class="news-year">2025</span>
-        </div>
-        <div class="news-body">
-          <span class="news-tag tag-role">Role</span>
-          <p>Started as <strong>Graduate Research Assistant</strong> at the SHIELD Lab, Southern Illinois University Carbondale, working with Dr. Abdur Rahman Bin Shahid.</p>
-        </div>
-      </article>
-      <article class="news-item">
-        <div class="news-date">
-          <span class="news-month">Mar</span>
-          <span class="news-year">2025</span>
-        </div>
-        <div class="news-body">
-          <span class="news-tag tag-award">Award</span>
-          <p>Awarded a competitive <strong>travel grant</strong> to present at the <strong>6th AAAI Workshop on Privacy-Preserving AI (PPAI-25)</strong>.</p>
-        </div>
-      </article>
-      <article class="news-item">
-        <div class="news-date">
-          <span class="news-month">Feb</span>
-          <span class="news-year">2025</span>
-        </div>
-        <div class="news-body">
-          <span class="news-tag tag-paper">Paper</span>
-          <p>Paper on <em>audio editing features as user-centric privacy defenses against LLM-based emotion inference attacks</em> presented at <strong>AAAI PPAI-25</strong>.</p>
-        </div>
-      </article>
-      <article class="news-item">
-        <div class="news-date">
-          <span class="news-month">Aug</span>
-          <span class="news-year">2024</span>
-        </div>
-        <div class="news-body">
-          <span class="news-tag tag-role">Role</span>
-          <p>Began my <strong>graduate student journey in Computer Science</strong> at Southern Illinois University Carbondale.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="section" id="about">
-    <div class="section-head">
-      <span class="section-num">01</span>
-      <h2 class="section-title">About<span class="serif-italic">.</span></h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-text">
-        <p class="lead">
-          I'm a Computer Science graduate student at <strong>Southern Illinois University Carbondale</strong>, working with Dr. Abdur Rahman Bin Shahid at the SHIELD Lab on the security, privacy, and forensic challenges of human interaction with large-scale generative AI systems.
+        <p>
+          I am a graduate student in Computer Science at Southern Illinois University Carbondale, where I work with
+          Dr. Abdur R. Shahid in the SHIELD Lab.
+          My research studies the security, privacy, and forensic risks that arise when people use consumer generative AI:
+          writing assistants whose one-tap rewrites can both hide emotional signals and help misinformation slip past detectors,
+          and on-device image editors whose edits are hard to localize after the fact.
         </p>
         <p>
-          My fascination with computer science started at home. I grew up watching my older brother type strange-looking lines of code on a screen and somehow turn them into working programs — to a curious kid, it felt like quiet, everyday magic. The desire to understand <em>how</em> those lines worked, and what else they could be made to do, is what eventually pulled me into the field for good.
+          Before SIUC, I was a research assistant at the Center for Computational and Data Sciences, Independent University, Bangladesh,
+          and earned my B.Sc. in Computer Science &amp; Engineering from RUET. My work has appeared at
+          EMNLP, ACL, ICTAI, ICMLA, and the AAAI Workshop on Privacy-Preserving AI.
         </p>
-        <p>
-          That early spark led me to <strong>Rajshahi University of Engineering &amp; Technology (RUET)</strong>, one of Bangladesh's leading engineering institutions, where I completed my B.Sc. in Computer Science &amp; Engineering. Under the supervision of Dr. Md. Ali Hossain, my undergraduate thesis explored deep learning models for the classification and segmentation of tumors from medical images — my first real taste of using machine learning for problems that meaningfully affect people's lives.
+        <!-- Optional: uncomment when you want to signal the PhD search publicly.
+        <p class="callout">I am applying to PhD programs for Fall 2027 and am happy to talk about research fit.</p>
+        -->
+
+        <p class="interests"><span class="label">Interests</span>
+          Privacy-preserving ML &middot; Generative AI forensics &middot; LLM &amp; VLM security &middot; Federated learning &middot; Multimodal learning
         </p>
-        <p>
-          After RUET, I joined the <strong>Center for Computational and Data Sciences (CCDS)</strong> at Independent University, Bangladesh as a Research Assistant. There I worked on satellite image analysis using Synthetic Aperture Radar data alongside collaborators from the University of Dhaka, and taught CSE-101 and CSE-203 lab courses, helping redesign the Python-based curriculum for incoming students. That mix of research and teaching is where I first realized how much I enjoy both sides of academia.
-        </p>
-        <p>
-          In 2024 I moved to the United States to begin my higher studies at SIUC. I started as a <strong>Graduate Teaching Assistant</strong> supporting courses in algorithms, advanced computer networks, and operating systems, and in mid-2025 transitioned into the SHIELD Lab as a <strong>Graduate Research Assistant</strong>. My research now sits at the intersection of generative AI, privacy, and security — work that has appeared at <strong>EMNLP 2026(Main)<strong> <strong>ACL 2026 Industry Track</strong>, <strong>ICMLA 2025</strong>, and the <strong>AAAI Workshop on Privacy-Preserving AI</strong>, with a competitive travel grant from AAAI supporting the presentation of that work.
-        </p>
-        <p>
-          Looking ahead, I want to lead my own interdisciplinary research program as a faculty member — advancing trustworthy, human-centered AI, mentoring the next generation of researchers, and continuing to ask the hard questions about how we build systems people can actually trust.
-        </p>
-      </div>
-      <div class="about-side">
-        <div class="info-card">
-          <h4>Currently</h4>
-          <ul class="info-list">
-            <li><span>Role</span><strong>Graduate Research Assistant</strong></li>
-            <li><span>Lab</span><strong>SHIELD Lab, SIUC</strong></li>
-            <li><span>Advisor</span><strong>Dr. A. R. B. Shahid</strong></li>
-            <li><span>Location</span><strong>Carbondale, IL</strong></li>
-            <li><span>CGPA</span><strong>4.00 / 4.00</strong></li>
-          </ul>
-        </div>
-        <div class="info-card">
-          <h4>Languages</h4>
-          <div class="lang-pills">
-            <span>Bangla <em>native</em></span>
-            <span>English <em>professional</em></span>
-            <span>German <em>limited</em></span>
-            <span>Hindi <em>elementary</em></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Research / Skills -->
-  <section class="section" id="research">
-    <div class="section-head">
-      <span class="section-num">02</span>
-      <h2 class="section-title">Research <span class="serif-italic">focus</span></h2>
-    </div>
-    <div class="research-grid">
-      <article class="research-card">
-        <div class="card-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-        </div>
-        <h3>Privacy-Preserving AI</h3>
-        <p>Designing federated learning systems and user-centric privacy defenses for sensitive data in machine learning pipelines.</p>
-      </article>
-      <article class="research-card">
-        <div class="card-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 014 4v2a4 4 0 01-8 0V6a4 4 0 014-4z"/><path d="M5 22v-3a4 4 0 014-4h6a4 4 0 014 4v3"/></svg>
-        </div>
-        <h3>Generative AI Forensics</h3>
-        <p>Building tools and datasets to detect, attribute, and defend against deceptive uses of generative AI systems.</p>
-      </article>
-      <article class="research-card">
-        <div class="card-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>
-        </div>
-        <h3>LLMs &amp; Vision-Language Models</h3>
-        <p>Studying privacy leakage and inference attacks against consumer-facing LLM and VLM applications.</p>
-      </article>
-      <article class="research-card">
-        <div class="card-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>
-        </div>
-        <h3>Multimodal Learning</h3>
-        <p>Attention fusion across wearable sensors, audio, and visual modalities for stress detection and human-state inference.</p>
-      </article>
-    </div>
+        <ul class="links" aria-label="Contact and profiles">
+          <li><a href="mailto:mohdfarhanisrak.soumik@siu.edu">Email</a></li>
+          <li><a href="assets/cv.pdf">CV</a></li>
+          <li><a href="https://scholar.google.com/citations?user=gKmSXl8AAAAJ">Google Scholar</a></li>
+          <li><a href="https://github.com/farhan1503001">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/mohd-farhan-israk-soumik/">LinkedIn</a></li>
+          <li><a href="https://orcid.org/0000-0002-9658-2775">ORCID</a></li>
+        </ul>
+        <ul class="affiliations" aria-label="Affiliations">
+          <li><img src="assets/logos/siu.png" alt="" width="44" height="44"><span>SIU Carbondale</span></li>
+          <li><img class="logo-solid" src="assets/logos/arch.png" alt="" width="44" height="44"><span>CVEX, The Arch</span></li>
+          <li><img src="assets/logos/ruet.png" alt="" width="44" height="44"><span>RUET</span></li>
+        </ul>
+      </div>
 
-    <div class="skills-block">
-      <h3 class="skills-heading">Technical stack</h3>
-      <div class="skills-rows">
-        <div class="skill-row">
-          <span class="skill-label">Languages</span>
-          <div class="skill-tags">
-            <span>Python</span><span>MATLAB</span><span>R</span><span>Java</span><span>C</span><span>C++</span><span>Assembly</span>
-          </div>
-        </div>
-        <div class="skill-row">
-          <span class="skill-label">Frameworks</span>
-          <div class="skill-tags">
-            <span>TensorFlow</span><span>PyTorch</span><span>Keras</span><span>Scikit-learn</span><span>Pandas</span><span>OpenCV</span>
-          </div>
-        </div>
-        <div class="skill-row">
-          <span class="skill-label">AI areas</span>
-          <div class="skill-tags">
-            <span>Generative AI</span><span>LLMs</span><span>VLMs</span><span>Agentic AI</span><span>Federated Learning</span><span>Privacy-Preserving ML</span><span>AI Forensics</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <img class="portrait" src="assets/headshot.jpg" width="260" height="325"
+           alt="Portrait of Mohd. Farhan Israk Soumik">
+    </section>
 
-  <!-- Experience -->
-  <section class="section" id="experience">
-    <div class="section-head">
-      <span class="section-num">03</span>
-      <h2 class="section-title">Experience &amp; <span class="serif-italic">education</span></h2>
-    </div>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <div class="tl-meta">
-            <span class="tl-date">August 2026 — Present</span>
-            <span class="tl-loc">Carbondale, IL</span>
-          </div>
-          <h3>Graduate Teaching Assistant</h3>
-          <p class="tl-org">School of Computing and Center for Virtual Expression(CVEX) · Southern Illinois University Carbondale</p>
-          <p>Conducting teaching assistant duties for CS-220B Computer Concepts and AI course and working as Graduate assistant at CVEX under Dr. Holly Lewis focusing on social impacts of AI agents and interaction</p>
-        </div>
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="tl-meta">
-            <span class="tl-date">Jun 2025 — July 2026</span>
-            <span class="tl-loc">Carbondale, IL</span>
-          </div>
-          <h3>Graduate Research Assistant</h3>
-          <p class="tl-org">SHIELD Lab · Southern Illinois University Carbondale</p>
-          <p>Conducting research on large language models, vision-language models, and usable privacy and security. Developing the first large-scale dataset of generative AI–based image edits from major consumer platforms.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="tl-meta">
-            <span class="tl-date">Aug 2024 — Jun 2025</span>
-            <span class="tl-loc">Carbondale, IL</span>
-          </div>
-          <h3>Graduate Teaching Assistant</h3>
-          <p class="tl-org">School of Computing · SIUC</p>
-          <p>Held 20 hours/week of office hours for undergraduates; assisted with quizzes, assignments, grading. Courses: Design and Analysis of Computer Algorithms, Advanced Computer Networks, Advanced Operating Systems.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="tl-meta">
-            <span class="tl-date">Jul 2023 — Jul 2024</span>
-            <span class="tl-loc">Dhaka, Bangladesh</span>
-          </div>
-          <h3>GRE Instructor</h3>
-          <p class="tl-org">Graduate Resources Enhancing Center (GREC)</p>
-          <p>Senior faculty preparing higher-study aspirants for the GRE — Quantitative, Verbal, and Analytical Writing. Designed quizzes, mock exams, and full-length practice tests.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="tl-meta">
-            <span class="tl-date">Jan 2022 — Jun 2023</span>
-            <span class="tl-loc">Dhaka, Bangladesh</span>
-          </div>
-          <h3>Research Assistant</h3>
-          <p class="tl-org">Center for Computational and Data Sciences · Independent University, Bangladesh</p>
-          <p>Worked on data-level fusion models for LULC classification of satellite images and developed segmentation models using Synthetic Aperture Radar (SAR) imagery — collaboration between CCDS and DND Lab, University of Dhaka.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="tl-meta">
-            <span class="tl-date">Jan 2022 — Jun 2023</span>
-            <span class="tl-loc">Dhaka, Bangladesh</span>
-          </div>
-          <h3>Teaching Assistant</h3>
-          <p class="tl-org">Independent University, Bangladesh</p>
-          <p>Co-taught CSE-101 Intro to Programming and CSE-203 Data Structures. Designed a new Python lab manual to migrate the curriculum from C to Python.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="tl-meta">
-            <span class="tl-date">Jul 2021 — Aug 2021</span>
-            <span class="tl-loc">Remote</span>
-          </div>
-          <h3>Data Science &amp; Business Analytics Intern</h3>
-          <p class="tl-org">The Sparks Foundation</p>
-          <p>Implemented machine learning algorithms — Random Forest, SVM, RNN, LSTM — for various business problems.</p>
-        </div>
-      </div>
-    </div>
+    <!-- ===================== NEWS ===================== -->
+    <section id="news" aria-labelledby="news-h">
+      <h2 id="news-h">News</h2>
+      <ul class="news">
+        <li><time datetime="2026-09">Sep 2026</time>
+          <span>Our paper on quantum attention heads in transformers was accepted as a full paper at <strong>ICTAI 2026</strong>, my first paper in quantum ML.</span></li>
+        <li><time datetime="2026-08">Aug 2026</time>
+          <span><em>Edits in the Wild</em>, a multilingual benchmark for localizing on-device generative image edits, was accepted to the <strong>EMNLP 2026 Main Conference</strong> (Budapest).</span></li>
+        <li><time datetime="2026-08">Aug 2026</time>
+          <span>Started as a Graduate Teaching Assistant in the School of Computing and a Graduate Research Assistant at CVEX, The Arch, SIUC.</span></li>
+        <li><time datetime="2026-07">Jul 2026</time>
+          <span>Presented our poster <em>No Innocence in Styling</em> at <strong>ACL 2026</strong> in San Diego.
+            <a class="news-photo" href="assets/acl2026.jpg"><img src="assets/acl2026-thumb.jpg" width="72" height="96" loading="lazy" alt="Presenting the poster at ACL 2026"><span>Photo</span></a>
+          </span></li>
+        <li><time datetime="2026-05">May 2026</time>
+          <span>Selected as a student volunteer for <strong>ACL 2026</strong>.</span></li>
+        <li><time datetime="2026-04">Apr 2026</time>
+          <span><em>No Innocence in Styling</em> was accepted to the <strong>ACL 2026 Industry Track</strong>, with a D&amp;I subsidy grant.</span></li>
+      </ul>
+      <details class="news-older">
+        <summary>Older news</summary>
+        <ul class="news">
+          <li><time datetime="2025-11">Nov 2025</time>
+            <span>Presented privacy-preserving multimodal stress detection at <strong>ICMLA 2025</strong> in Boca Raton, Florida.</span></li>
+          <li><time datetime="2025-06">Jun 2025</time>
+            <span>Joined the SHIELD Lab at SIUC as a Graduate Research Assistant.</span></li>
+          <li><time datetime="2025-03">Mar 2025</time>
+            <span>Received a travel grant to present at the <strong>AAAI PPAI-25</strong> workshop.</span></li>
+          <li><time datetime="2025-02">Feb 2025</time>
+            <span>Presented audio-editing defenses against LLM emotion inference at <strong>AAAI PPAI-25</strong>.</span></li>
+          <li><time datetime="2024-08">Aug 2024</time>
+            <span>Began graduate study in Computer Science at Southern Illinois University Carbondale.</span></li>
+        </ul>
+      </details>
+    </section>
 
-    <div class="education-block">
-      <h3 class="ed-heading">Education</h3>
-      <div class="ed-grid">
-        <div class="ed-card">
-          <div class="ed-year">2024 — 2027</div>
-          <h4>M.Sc. in Computer Science</h4>
-          <p>Southern Illinois University Carbondale</p>
-          <p class="ed-meta">CGPA 4.00 / 4.00 · Advisor: Dr. A. R. B. Shahid</p>
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <section id="publications" aria-labelledby="pub-h">
+      <h2 id="pub-h">Publications</h2>
+      <p class="section-note">See also <a href="https://scholar.google.com/citations?user=gKmSXl8AAAAJ">Google Scholar</a>.</p>
+
+      <ol class="pubs" reversed>
+        <!-- TODO: confirm full author list -->
+        <li class="pub">
+          <span class="venue">EMNLP 2026</span>
+          <div>
+            <p class="pub-title">Edits in the Wild: A Multilingual Benchmark for Localizing On-Device Generative Image Edits on Consumer Platforms</p>
+            <p class="pub-authors"><strong>MFI Soumik</strong>, et al.</p>
+            <p class="pub-venue">Conference on Empirical Methods in Natural Language Processing (Main), 2026. <span class="status">To appear</span></p>
+          </div>
+        </li>
+
+        <!-- TODO: confirm full author list -->
+        <li class="pub">
+          <span class="venue">ICTAI 2026</span>
+          <div>
+            <p class="pub-title">When Quantum Entanglement Meets Transformer Attention: A Controlled Study of Quantum Attention Heads</p>
+            <p class="pub-authors"><strong>MFI Soumik</strong>, et al.</p>
+            <p class="pub-venue">38th IEEE International Conference on Tools with Artificial Intelligence, 2026. <span class="status">To appear</span></p>
+          </div>
+        </li>
+
+        <!-- TODO: confirm author names against the camera-ready paper -->
+        <li class="pub">
+          <span class="venue">ACL 2026</span>
+          <div>
+            <p class="pub-title">No Innocence in Styling: Discovery of Privacy Protection Capabilities and Security Risks in Consumer Generative AI Writing Assistants</p>
+            <p class="pub-authors"><strong>MFI Soumik</strong>, SM Hasan, MWW Kankanamge, A Imteaj, AR Shahid</p>
+            <p class="pub-venue">Annual Meeting of the Association for Computational Linguistics (Industry Track), 2026.</p>
+            <p class="pub-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=gKmSXl8AAAAJ&amp;citation_for_view=gKmSXl8AAAAJ:Y0pCki6q_DkC">Scholar</a>
+              <a href="assets/acl2026.jpg">Poster photo</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="venue">ICMLA 2025</span>
+          <div>
+            <p class="pub-title">Privacy-Preserving Multimodal Stress Detection from Wearables with Attention Fusion and Federated Learning</p>
+            <p class="pub-authors"><strong>MFI Soumik</strong>, E Maghsoudlou Nima, H Zangoti, A Imteaj, AR Shahid</p>
+            <p class="pub-venue">24th IEEE International Conference on Machine Learning and Applications, 2025.</p>
+            <p class="pub-links">
+              <a href="https://scholar.google.com/citations?user=gKmSXl8AAAAJ">Scholar</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="venue">AAAI-W 2025</span>
+          <div>
+            <p class="pub-title">Audio Editing Features as User-Centric Privacy Defenses Against Large Language Model (LLM) Based Emotion Inference Attacks</p>
+            <p class="pub-authors"><strong>MFI Soumik</strong>, WKM Mithsara, AR Shahid, A Imteaj</p>
+            <p class="pub-venue">6th AAAI Workshop on Privacy-Preserving Artificial Intelligence (PPAI-25), 2025. <span class="award">Travel grant</span></p>
+            <p class="pub-links">
+              <a href="https://arxiv.org/abs/2501.18727">arXiv</a>
+              <a href="https://arxiv.org/pdf/2501.18727">PDF</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="venue">arXiv 2025</span>
+          <div>
+            <p class="pub-title">Evaluating Apple Intelligence's Writing Tools for Privacy Against Large Language Model-Based Inference Attacks: Insights from Early Datasets</p>
+            <p class="pub-authors"><strong>MFI Soumik</strong>, SM Hasan, AR Shahid</p>
+            <p class="pub-venue">arXiv preprint arXiv:2506.03870, 2025.</p>
+            <p class="pub-links">
+              <a href="https://arxiv.org/abs/2506.03870">arXiv</a>
+              <a href="https://arxiv.org/pdf/2506.03870">PDF</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="venue">TENSYMP 2020</span>
+          <div>
+            <p class="pub-title">Brain Tumor Classification with Inception Network Based Deep Learning Model Using Transfer Learning</p>
+            <p class="pub-authors"><strong>MFI Soumik</strong>, MA Hossain</p>
+            <p class="pub-venue">IEEE Region 10 Symposium (TENSYMP), 2020.</p>
+            <p class="pub-links">
+              <a href="https://doi.org/10.1109/TENSYMP50017.2020.9230618">DOI</a>
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" aria-labelledby="exp-h">
+      <h2 id="exp-h">Research Experience</h2>
+      <ul class="entries">
+        <li class="entry">
+          <div class="entry-main">
+            <p class="entry-title">Graduate Research Assistant, Center for Virtual Expression (CVEX), The Arch</p>
+            <p class="entry-org">Southern Illinois University Carbondale &middot; Supervisor: Dr. Holly Lewis</p>
+            <p class="entry-desc">Social impacts of AI agents and human&ndash;agent interaction.</p>
+          </div>
+          <p class="entry-date">Aug 2026 &ndash; Present</p>
+        </li>
+        <li class="entry">
+          <div class="entry-main">
+            <p class="entry-title">Graduate Research Assistant, SHIELD Lab</p>
+            <p class="entry-org">Southern Illinois University Carbondale &middot; Advisor: Dr. Abdur R. Shahid</p>
+            <p class="entry-desc">Security and privacy of consumer LLMs and VLMs; built a large-scale benchmark of on-device generative image edits from major consumer platforms.</p>
+          </div>
+          <p class="entry-date">Jun 2025 &ndash; Jul 2026</p>
+        </li>
+        <li class="entry">
+          <div class="entry-main">
+            <p class="entry-title">Research Assistant, Center for Computational and Data Sciences</p>
+            <p class="entry-org">Independent University, Bangladesh</p>
+            <p class="entry-desc">Data-level fusion for land-use/land-cover classification and segmentation of Synthetic Aperture Radar imagery, in collaboration with the DND Lab, University of Dhaka.</p>
+          </div>
+          <p class="entry-date">Jan 2022 &ndash; Jun 2023</p>
+        </li>
+        <li class="entry">
+          <div class="entry-main">
+            <p class="entry-title">Data Science &amp; Business Analytics Intern</p>
+            <p class="entry-org">The Sparks Foundation (remote)</p>
+          </div>
+          <p class="entry-date">Jul &ndash; Aug 2021</p>
+        </li>
+      </ul>
+
+      <h2 id="edu-h">Education</h2>
+      <ul class="entries">
+        <li class="entry">
+          <div class="entry-main">
+            <p class="entry-title">M.Sc. in Computer Science</p>
+            <p class="entry-org">Southern Illinois University Carbondale &middot; GPA 4.00/4.00</p>
+          </div>
+          <p class="entry-date">2024 &ndash; 2027 (expected)</p>
+        </li>
+        <li class="entry">
+          <div class="entry-main">
+            <p class="entry-title">B.Sc. in Computer Science &amp; Engineering</p>
+            <p class="entry-org">Rajshahi University of Engineering &amp; Technology &middot; CGPA 3.47/4.00 (WES)</p>
+            <p class="entry-desc">Thesis: Deep learning for classification and segmentation of tumors in medical images. Advisor: Dr. Md. Ali Hossain.</p>
+          </div>
+          <p class="entry-date">2016 &ndash; 2020</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== TEACHING ===================== -->
+    <section id="teaching" aria-labelledby="teach-h">
+      <h2 id="teach-h">Teaching</h2>
+      <ul class="entries">
+        <li class="entry">
+          <div class="entry-main">
+            <p class="entry-title">Graduate Teaching Assistant, School of Computing, SIUC</p>
+            <p class="entry-desc">CS 220B Computer Concepts and AI (Fall 2026) &middot; Design and Analysis of Computer Algorithms (Fall 2024) &middot; Advanced Computer Networks (Fall 2024) &middot; Advanced Operating Systems (Spring 2025) &middot; Computer Algorithms (Spring 2025)</p>
+          </div>
+          <p class="entry-date">2024 &ndash; Present</p>
+        </li>
+        <li class="entry">
+          <div class="entry-main">
+            <p class="entry-title">GRE Instructor, Graduate Resources Enhancing Center</p>
+            <p class="entry-desc">Quantitative, Verbal, and Analytical Writing preparation.</p>
+          </div>
+          <p class="entry-date">2023 &ndash; 2024</p>
+        </li>
+        <li class="entry">
+          <div class="entry-main">
+            <p class="entry-title">Teaching Assistant, Independent University, Bangladesh</p>
+            <p class="entry-desc">CSE 101 Introduction to Programming &middot; CSE 203 Data Structures. Designed a new Python lab manual to move the course from C to Python.</p>
+          </div>
+          <p class="entry-date">2022 &ndash; 2023</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== AWARDS & SERVICE ===================== -->
+    <section id="awards" aria-labelledby="awards-h">
+      <h2 id="awards-h">Awards &amp; Service</h2>
+      <ul class="plain">
+        <li><span class="yr">2026</span> ACL 2026 Diversity &amp; Inclusion Subsidy</li>
+        <li><span class="yr">2026</span> Student Volunteer, ACL 2026</li>
+        <li><span class="yr">2025</span> Travel Grant, AAAI Workshop on Privacy-Preserving AI (PPAI-25)</li>
+        <li><span class="yr">2015</span> Government Scholarship, Higher Secondary Certificate (top 5% merit list)</li>
+      </ul>
+    </section>
+
+    <!-- ===================== BEYOND RESEARCH ===================== -->
+    <section id="beyond" aria-labelledby="beyond-h">
+      <h2 id="beyond-h">Beyond Research</h2>
+      <div class="beyond">
+        <div>
+          <p>
+            I got into computer science by watching my older brother write code at home. Seeing a few lines of text
+            turn into a working program felt like quiet, everyday magic, and I have wanted to understand how it works ever since.
+          </p>
+          <p>
+            I'm from Bangladesh and moved to Carbondale in 2024. I speak Bangla and English, and some German and Hindi.
+            Before graduate school I taught GRE prep for a year.
+          </p>
+          <!-- Add one or two lines about life outside work, e.g.:
+          <p>Outside the lab I enjoy ___ and ___.</p> -->
         </div>
-        <div class="ed-card">
-          <div class="ed-year">2016 — 2020</div>
-          <h4>B.Sc. in Computer Science &amp; Engineering</h4>
-          <p>Rajshahi University of Engineering &amp; Technology</p>
-          <p class="ed-meta">CGPA 3.47 / 4.00(WES) · Thesis: Deep learning for tumor classification &amp; segmentation</p>
-        </div>
+        <figure class="moment">
+          <a href="assets/acl2026.jpg"><img src="assets/acl2026-thumb.jpg" width="180" height="240" loading="lazy" alt="Standing beside my poster at ACL 2026 in San Diego"></a>
+          <figcaption>With my poster at ACL 2026, San Diego</figcaption>
+        </figure>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Publications -->
-  <section class="section" id="publications">
-    <div class="section-head">
-      <span class="section-num">04</span>
-      <h2 class="section-title">Selected <span class="serif-italic">publications</span></h2>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Mohd. Farhan Israk Soumik &middot; Last updated October 2026</p>
     </div>
-    <div class="pub-list">
-      <article class="pub-item">
-        <div class="pub-venue">
-          <span class="venue-tag">ACL Industry · 2026</span>
-          <span class="pub-status">D&I Subsidy Grant</span>
-        </div>
-        <h3>No Innocence in Styling — Discovery of Privacy Protection Capabilities and Security Risks in Consumer Generative AI Writing Assistants</h3>
-        <p class="pub-authors">M. F. I. Soumik, et al.</p>
-        <p class="pub-loc">San Diego, California — Industry Track</p>
-        <div class="pub-actions">
-           <a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gKmSXl8AAAAJ&citation_for_view=gKmSXl8AAAAJ:Y0pCki6q_DkC" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-            View on Scholar
-          </a>
-        </div>
-      </article>
-      <article class="pub-item">
-        <div class="pub-venue">
-          <span class="venue-tag">ICMLA · 2025</span>
-        </div>
-        <h3>Privacy-Preserving Multimodal Stress Detection from Wearables with Attention Fusion and Federated Learning</h3>
-        <p class="pub-authors">M. F. I. Soumik, E. Maghsoudlou Nima, H. Zangoti, A. Imteaj, A. R. Shahid</p>
-        <p class="pub-loc">25th International Conference on Machine Learning &amp; Applications · Boca Raton, Florida</p>
-        <div class="pub-actions">
-          <a class="pub-link" href="https://scholar.google.com/citations?user=gKmSXl8AAAAJ&amp;hl=en" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-            View on Scholar
-          </a>
-        </div>
-      </article>
-      <article class="pub-item">
-        <div class="pub-venue">
-          <span class="venue-tag">AAAI PPAI · 2025</span>
-          <span class="pub-status">Travel grant</span>
-        </div>
-        <h3>Audio Editing Features as User-Centric Privacy Defenses Against Large Language Model–Based Emotion Inference Attacks</h3>
-        <p class="pub-authors">M. F. I. Soumik, W. K. M. Mithsara, A. R. Shahid, A. Imteaj</p>
-        <p class="pub-loc">6th AAAI Workshop on Privacy-Preserving AI</p>
-        <div class="pub-actions">
-          <a class="pub-link" href="https://arxiv.org/abs/2501.18727" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-            arXiv
-          </a>
-          <a class="pub-link" href="https://arxiv.org/pdf/2501.18727" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            PDF
-          </a>
-        </div>
-      </article>
-      <article class="pub-item">
-        <div class="pub-venue">
-          <span class="venue-tag">arXiv · 2025</span>
-        </div>
-        <h3>Evaluating Apple Intelligence's Writing Tools for Privacy Against LLM-Based Inference Attacks: Insights from Early Datasets</h3>
-        <p class="pub-authors">M. F. I. Soumik, S. M. Hasan, A. R. Shahid</p>
-        <p class="pub-loc">arXiv preprint arXiv:2506.03870</p>
-        <div class="pub-actions">
-          <a class="pub-link" href="https://arxiv.org/abs/2506.03870" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-            arXiv
-          </a>
-          <a class="pub-link" href="https://arxiv.org/pdf/2506.03870" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            PDF
-          </a>
-        </div>
-      </article>
-      <article class="pub-item">
-        <div class="pub-venue">
-          <span class="venue-tag">IEEE TENSYMP · 2020</span>
-        </div>
-        <h3>Brain Tumor Classification with Inception Network–Based Deep Learning Model Using Transfer Learning</h3>
-        <p class="pub-authors">M. F. I. Soumik, M. A. Hossain</p>
-        <p class="pub-loc">IEEE Region 10 Symposium</p>
-        <div class="pub-actions">
-          <a class="pub-link" href="https://ieeexplore.ieee.org/document/9230618" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-            IEEE Xplore
-          </a>
-        </div>
-      </article>
-    </div>
+  </footer>
 
-    <div class="pub-footer">
-      <a href="https://scholar.google.com/citations?user=gKmSXl8AAAAJ&amp;hl=en" target="_blank" rel="noopener" class="btn btn-ghost">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg>
-        <span>View all on Google Scholar</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="section section-contact" id="contact">
-    <div class="contact-wrap">
-      <p class="contact-eyebrow">— Get in touch</p>
-      <h2 class="contact-title">
-        Let's talk about<br/>
-        <span class="serif-italic">trustworthy AI.</span>
-      </h2>
-      <p class="contact-sub">
-        Open to research collaborations, conference discussions, and questions from prospective students. The fastest way to reach me is email.
-      </p>
-      <a href="mailto:farhanisrak1503001@gmail.com" class="contact-email">
-        farhanisrak1503001@gmail.com
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-      </a>
-      <div class="contact-meta">
-        <div><span>Phone</span><strong>+1 (781) 698-8513</strong></div>
-        <div><span>Address</span><strong>600 W Freeman St, Carbondale, IL 62901</strong></div>
-      </div>
-    </div>
-    <footer class="footer">
-      <p>© <span id="year"></span> Mohd. Farhan Israk Soumik. Designed &amp; built with care.</p>
-      <p class="footer-stack">Hand-coded · HTML · CSS · JavaScript</p>
-    </footer>
-  </section>
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" aria-label="Close">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-    </button>
-    <img id="lightbox-img" src="" alt="" />
-    <p class="lightbox-caption" id="lightbox-caption"></p>
-  </div>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
